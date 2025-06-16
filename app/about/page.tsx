@@ -54,7 +54,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="pt-24 pb-12 md:pt-32 md:pb-16  text-emerald-900 relative overflow-hidden">
         {/* Soft top gradient for logo/menu contrast */}
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/90 to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-ivory/90 to-transparent z-10 pointer-events-none" />
         {/* SVG/CSS Particles Effect */}
         <div className="absolute inset-0 pointer-events-none z-0 animate-fade-in">
           <svg width="100%" height="100%" className="w-full h-full" style={{ position: 'absolute', top: 0, left: 0 }}>
@@ -79,7 +79,7 @@ export default function About() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-ivory">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Image Side */}
@@ -101,7 +101,7 @@ export default function About() {
               </h2>
               <div className="space-y-6">
                 {/* Vision Card */}
-                <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-gold-400 flex items-start gap-4">
+                <div className="bg-ivory p-8 rounded-xl shadow-md border-l-4 border-gold-400 flex items-start gap-4">
                   <Star className="h-8 w-8 text-gold-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold text-emerald-700 mb-2">Our Vision</h3>
@@ -111,7 +111,7 @@ export default function About() {
                   </div>
                 </div>
                 {/* Mission Card */}
-                <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-emerald-400 flex items-start gap-4">
+                <div className="bg-ivory p-8 rounded-xl shadow-md border-l-4 border-emerald-400 flex items-start gap-4">
                   <TrendingUp className="h-8 w-8 text-emerald-600 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold text-emerald-700 mb-2">Our Mission</h3>
@@ -144,7 +144,7 @@ export default function About() {
             {values.map((value, idx) => (
               <div
                 key={value.title}
-                className="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden"
+                className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden"
                 style={{ minHeight: 260 }}
               >
                 <div className="flex items-center justify-center mb-6">
@@ -162,7 +162,7 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-ivory">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700 mb-4">
@@ -177,7 +177,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
             {/* Team Member 1 */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-xl animate-on-scroll animate-delay-100 card-hover border border-gray-100">
+            <div className="bg-ivory rounded-xl overflow-hidden shadow-xl animate-on-scroll animate-delay-100 card-hover border border-gray-100">
               <div className="relative h-[400px]">
                 <Image src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80" alt="Professional business leader - Unsplash" fill className="object-cover" />
               </div>
@@ -199,7 +199,7 @@ export default function About() {
             </div>
 
             {/* Team Member 2 */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-xl animate-on-scroll animate-delay-200 card-hover border border-gray-100">
+            <div className="bg-ivory rounded-xl overflow-hidden shadow-xl animate-on-scroll animate-delay-200 card-hover border border-gray-100">
               <div className="relative h-[400px]">
                 <Image src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="Creative businesswoman - Unsplash" fill className="object-cover" />
               </div>
@@ -224,7 +224,7 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section-padding bg-white text-emerald-900">
+      <section className="section-padding bg-ivory text-emerald-900">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
             <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 mb-4 font-semibold">
@@ -238,7 +238,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
+            <div className="bg-ivory rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
               <div className="flex items-center justify-center mb-6">
                 <Star className="h-8 w-8 text-gold-500" />
               </div>
@@ -248,7 +248,7 @@ export default function About() {
               </p>
             </div>
             {/* Card 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
+            <div className="bg-ivory rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
               <div className="flex items-center justify-center mb-6">
                 <Users className="h-8 w-8 text-emerald-600" />
               </div>
@@ -258,7 +258,7 @@ export default function About() {
               </p>
             </div>
             {/* Card 3 */}
-            <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
+            <div className="bg-ivory rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
               <div className="flex items-center justify-center mb-6">
                 <TrendingUp className="h-8 w-8 text-gold-500" />
               </div>

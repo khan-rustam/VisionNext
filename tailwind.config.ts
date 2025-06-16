@@ -81,8 +81,8 @@ const config = {
           950: "#431e09",
         },
         ivory: {
-          DEFAULT: "#FFFFF0",
-          50: "#FFFFFF",
+          DEFAULT: "#FDFDFB",
+          50: "#FDFDFB",
           100: "#FFFFF0",
           200: "#FFFFD6",
           300: "#FFFFBD",

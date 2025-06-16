@@ -63,7 +63,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="pt-24 pb-12 md:pt-32 md:pb-16 text-emerald-900 relative overflow-hidden">
         {/* Soft top gradient for logo/menu contrast */}
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/90 to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-ivory/90 to-transparent z-10 pointer-events-none" />
         {/* SVG/CSS Particles Effect */}
         <div className="absolute inset-0 pointer-events-none z-0 animate-fade-in">
           <svg width="100%" height="100%" className="w-full h-full" style={{ position: 'absolute', top: 0, left: 0 }}>
@@ -88,11 +88,11 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-ivory">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div id="contact-form" className="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 card-hover animate-on-scroll transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div id="contact-form" className="bg-ivory p-10 rounded-2xl shadow-lg border border-gray-100 card-hover animate-on-scroll transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <h2 className="heading-md mb-8">Send Us a Message</h2>
               {isSubmitted ? (
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-8 text-center">
@@ -249,7 +249,7 @@ export default function Contact() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* FAQ 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-100 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div className="bg-ivory p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-100 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <div className="flex items-center mb-6">
                 <HelpCircle className="h-8 w-8 text-gold-500 mr-3" />
                 <h3 className="text-xl font-semibold text-emerald-800 mb-0 group-hover:text-gold-600 transition-colors duration-300">What industries do you work with?</h3>
@@ -260,7 +260,7 @@ export default function Contact() {
               </p>
             </div>
             {/* FAQ 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-200 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div className="bg-ivory p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-200 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <div className="flex items-center mb-6">
                 <Clock className="h-8 w-8 text-gold-500 mr-3" />
                 <h3 className="text-xl font-semibold text-emerald-800 mb-0 group-hover:text-gold-600 transition-colors duration-300">How long does a typical project take?</h3>
@@ -271,7 +271,7 @@ export default function Contact() {
               </p>
             </div>
             {/* FAQ 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-300 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div className="bg-ivory p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-300 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <div className="flex items-center mb-6">
                 <RefreshCw className="h-8 w-8 text-gold-500 mr-3" />
                 <h3 className="text-xl font-semibold text-emerald-800 mb-0 group-hover:text-gold-600 transition-colors duration-300">Do you offer ongoing support?</h3>
@@ -282,7 +282,7 @@ export default function Contact() {
               </p>
             </div>
             {/* FAQ 4 */}
-            <div className="bg-white p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-400 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div className="bg-ivory p-8 rounded-2xl shadow-xl animate-on-scroll animate-delay-400 border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <div className="flex items-center mb-6">
                 <TrendingUp className="h-8 w-8 text-gold-500 mr-3" />
                 <h3 className="text-xl font-semibold text-emerald-800 mb-0 group-hover:text-gold-600 transition-colors duration-300">How do you measure success?</h3>

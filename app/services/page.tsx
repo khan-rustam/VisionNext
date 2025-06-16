@@ -20,7 +20,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="pt-24 pb-12 md:pt-32 md:pb-16  text-emerald-900 relative overflow-hidden">
         {/* Soft top gradient for logo/menu contrast */}
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/90 to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-ivory/90 to-transparent z-10 pointer-events-none" />
         {/* SVG/CSS Particles Effect */}
         <div className="absolute inset-0 pointer-events-none z-0 animate-fade-in">
           <svg width="100%" height="100%" className="w-full h-full" style={{ position: 'absolute', top: 0, left: 0 }}>
@@ -38,7 +38,7 @@ export default function Services() {
             <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 font-semibold mb-4 tracking-wide">What We Offer</div>
             <h1 className="heading-lg mb-6">Our Services</h1>
             <p className="body-lg text-emerald-700 mb-8 font-light">
-            Comprehensive solutions designed to help your business grow, innovate, and succeed in today's competitive landscape.
+              Comprehensive solutions designed to help your business grow, innovate, and succeed in today's competitive landscape.
             </p>
           </div>
         </div>
@@ -46,11 +46,11 @@ export default function Services() {
 
 
       {/* Services Grid */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-ivory">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <div className="flex items-center justify-center mb-8">
                 <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
                   <Lightbulb className="h-8 w-8 text-gold-500" />
@@ -85,7 +85,7 @@ export default function Services() {
             </div>
 
             {/* Service 2 */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <div className="flex items-center justify-center mb-8">
                 <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
                   <BarChart2 className="h-8 w-8 text-gold-500" />
@@ -121,7 +121,7 @@ export default function Services() {
             </div>
 
             {/* Service 3 */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-300 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+            <div className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-300 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
               <div className="flex items-center justify-center mb-8">
                 <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
                   <Target className="h-8 w-8 text-gold-500" />
