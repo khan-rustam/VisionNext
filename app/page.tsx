@@ -135,12 +135,11 @@ export default function Home() {
                 <span style={{ color: "#D4AF37" }}>Transform</span>
               </h2>
               <p className="body-lg font-light">
-                At VisionNest, we believe in the power of vision and innovation. We partner with forward-thinking
-                businesses to nurture their ideas and transform them into reality.
+                We will provide you with expert, timely advice and professional services that will exceed your expectations.
               </p>
               <p className="body-md font-light">
-                Our approach combines strategic thinking, creative solutions, and meticulous execution to help your
-                business reach new heights.
+                We're here to help you through all the important financial life stages, whether you are looking to enter the housing market, developing your investment portfolio or you are small business owner. We will find a solution that saves you money, time, and hassle.
+
               </p>
               <Link
                 href="/about"
@@ -175,86 +174,56 @@ export default function Home() {
             </div>
             <h2 className="heading-lg mb-6">What We Do</h2>
             <p className="body-md font-light max-w-2xl mx-auto">
-              We offer a comprehensive range of services designed to help your business grow, innovate, and succeed in
-              today's competitive landscape.
+              We offer a comprehensive range of services designed to help your business grow, innovate, and succeed in today's competitive landscape.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div
-              className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden"
-            >
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <Lightbulb className="h-8 w-8 text-gold-500" />
-                </span>
-              </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Strategic Consulting</h3>
-              <p className="mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300" style={{ color: "#2E8B57" }}>
-                We help businesses develop clear, actionable strategies that drive growth and create sustainable
-                competitive advantages.
-              </p>
-              <Link
-                href="/services"
-                className="inline-flex items-center font-medium hover:text-gold-600 transition-colors group"
-                style={{ color: "#2E8B57" }}
+            {/* Enhanced Services Preview - match services page, add polish */}
+            {[
+              {
+                title: "Home Loans",
+                image: "https://financesupport.com.au/wp-content/uploads/2022/11/villa-house-model-key-drawing-retro-desktop-real-estate-sale-concept.jpg",
+                description: "Find the best home loan options tailored to your needs and goals.",
+              },
+              {
+                title: "Commercial and Business Loan",
+                image: "https://financesupport.com.au/wp-content/uploads/2022/11/handshake-close-up-executives.jpg",
+                description: "Flexible financing for your business growth and expansion.",
+              },
+              {
+                title: "Cash Flow",
+                image: "https://financesupport.com.au/wp-content/uploads/2022/11/accountant-calculating-profit-with-financial-analysis-graphs.jpg",
+                description: "Solutions to keep your business running smoothly and efficiently.",
+              },
+            ].map((service, idx) => (
+              <div
+                key={service.title}
+                className="bg-ivory rounded-2xl p-0 shadow-xl border border-gold-100 card-hover flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden floating"
+                style={{ minHeight: 420 }}
               >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
-
-            {/* Service 2 */}
-            <div
-              className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden"
-            >
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <BarChart2 className="h-8 w-8 text-gold-500" />
-                </span>
+                <div className="relative w-full h-48 overflow-hidden rounded-t-2xl">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gold-200/60 to-transparent opacity-80 pointer-events-none" />
+                </div>
+                <div className="flex-1 flex flex-col justify-between p-8">
+                  <h3 className="text-xl font-semibold mb-2 text-emerald-900 group-hover:text-gold-600 transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-emerald-700 font-light mb-4 min-h-[48px]">{service.description}</p>
+                  <Link
+                    href="/services"
+                    className="mt-auto btn-primary bg-gold-500 hover:bg-gold-600 text-emerald-950 px-8 py-2 rounded-lg font-medium transition-colors duration-300 shadow-md flex justify-center items-center mx-auto w-fit"
+                  >
+                    Learn More
+                  </Link>
+                </div>
               </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Business Growth</h3>
-              <p className="mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300" style={{ color: "#2E8B57" }}>
-                Our experts work with you to identify growth opportunities, optimize operations, and scale your business
-                effectively.
-              </p>
-              <Link
-                href="/services"
-                className="inline-flex items-center font-medium hover:text-gold-600 transition-colors group"
-                style={{ color: "#2E8B57" }}
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
-
-            {/* Service 3 */}
-            <div
-              className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-300 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden"
-            >
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <Target className="h-8 w-8 text-gold-500" />
-                </span>
-              </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Innovation Solutions</h3>
-              <p className="mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300" style={{ color: "#2E8B57" }}>
-                We help you develop and implement innovative solutions that address complex challenges and create new
-                opportunities.
-              </p>
-              <Link
-                href="/services"
-                className="inline-flex items-center font-medium hover:text-gold-600 transition-colors group"
-                style={{ color: "#2E8B57" }}
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
+            ))}
           </div>
 
           <div className="text-center mt-16 animate-on-scroll bounce-in">
@@ -398,17 +367,7 @@ export default function Home() {
               "VisionNest helped us transform our business strategy, resulting in significant growth and improved
               operational efficiency. Their insights and guidance were invaluable to our success."
             </p>
-            <div className="flex items-center">
-              <div className="h-14 w-14 rounded-full mr-4" style={{ backgroundColor: "#E6F7ED" }}></div>
-              <div>
-                <p className="font-semibold" style={{ color: "#2E8B57" }}>
-                  Sarah Johnson
-                </p>
-                <p className="text-sm" style={{ color: "#2E8B57" }}>
-                  CEO, TechInnovate
-                </p>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>

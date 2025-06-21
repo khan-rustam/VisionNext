@@ -78,14 +78,16 @@ export default function About() {
         </div>
       </section>
 
+   
+
       {/* Vision & Mission */}
-      <section className="section-padding bg-ivory">
+      <section className=" bg-ivory">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Image Side */}
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl animate-on-scroll fade-in-left">
               <Image
-                src="https://plus.unsplash.com/premium_photo-1742202420252-a3416772f068?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1577563682708-4f022ec774fb?q=80&w=2534&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Vision, growth, and inspiration - Unsplash"
                 fill
                 className="object-cover"
@@ -121,6 +123,47 @@ export default function About() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+         {/* Why We Are Better Than The Banks */}
+         <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="text-center max-w-2xl mx-auto mb-16 animate-on-scroll">
+            <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 mb-4 font-semibold tracking-wide">
+              Why We Are Better Than The Banks
+            </div>
+            <h2 className="heading-lg mb-6 text-emerald-900">Why We Are Better Than The Banks</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Completely Personalised */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2"/><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">👤</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Completely Personalised</h3>
+              <div className="font-bold text-gold-600 mb-2">IT'S ALL ABOUT YOU</div>
+              <p className="text-emerald-700 font-light">You are not just another number to us. We work to find you the deal that best suits you and your circumstances.</p>
+            </div>
+            {/* Ultra Quick */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2"/><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">⚡</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Ultra Quick</h3>
+              <div className="font-bold text-gold-600 mb-2">YOUR TIME IS OUR PRIORITY</div>
+              <p className="text-emerald-700 font-light">There's no "We will get back to you in 2-3 business days". We offer fast response times and quick results.</p>
+            </div>
+            {/* Super Simple */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2"/><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">✔️</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Super Simple</h3>
+              <div className="font-bold text-gold-600 mb-2">LEAVE IT UP TO US</div>
+              <p className="text-emerald-700 font-light">You will be assigned a dedicated Home Loan Specialist to assist you throughout the entire process.</p>
             </div>
           </div>
         </div>
@@ -179,14 +222,17 @@ export default function About() {
             {/* Team Member 1 */}
             <div className="bg-ivory rounded-xl overflow-hidden shadow-xl animate-on-scroll animate-delay-100 card-hover border border-gray-100">
               <div className="relative h-[400px]">
-                <Image src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80" alt="Professional business leader - Unsplash" fill className="object-cover" />
+                <Image src="https://www.themortgageclub.co.nz/assets/img/team/team-1.jpg" alt="Professional business leader - Unsplash" fill className="object-cover object-top" />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-semibold text-emerald-800 mb-2">Hemant</h3>
-                <p className="text-gold-600 font-medium mb-6">Co-Founder & Director</p>
+                <h3 className="text-2xl font-semibold text-emerald-800 mb-2">Hemant Choudhary</h3>
+                <p className="text-gold-600 font-medium mb-2">Senior Finance and Mortgage Consultant</p>
+                <div className="flex gap-4 mb-4">
+                  <span className="inline-block bg-emerald-100 text-emerald-700 rounded-full px-3 py-1 text-xs font-semibold">17+ Years Experience</span>
+                  <span className="inline-block bg-gold-100 text-gold-700 rounded-full px-3 py-1 text-xs font-semibold">14 Years in NZ Banking</span>
+                </div>
                 <p className="text-emerald-700 mb-6 font-light">
-                  With over 15 years of experience in business strategy and innovation, Hemant leads our strategic
-                  initiatives and client partnerships.
+                  Hemant Choudhary is a highly experienced finance and mortgage professional with 17 years in the industry, including 14 years at one of New Zealand's leading banks. He has received multiple awards for his dedication to customer service and helping clients achieve their financial goals.
                 </p>
                 <a
                   href="mailto:Hemant@visionnest.com.au"
@@ -201,7 +247,7 @@ export default function About() {
             {/* Team Member 2 */}
             <div className="bg-ivory rounded-xl overflow-hidden shadow-xl animate-on-scroll animate-delay-200 card-hover border border-gray-100">
               <div className="relative h-[400px]">
-                <Image src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="Creative businesswoman - Unsplash" fill className="object-cover" />
+                <Image src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="Creative businesswoman - Unsplash" fill className="object-cover " />
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-semibold text-emerald-800 mb-2">Shagun</h3>
@@ -224,55 +270,58 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section-padding bg-ivory text-emerald-900">
+      <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
-            <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 mb-4 font-semibold">
+          <div className="text-center max-w-2xl mx-auto mb-16 animate-on-scroll">
+            <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 mb-4 font-semibold tracking-wide">
               Why Choose Us
             </div>
-            <h2 className="heading-lg mb-6">The VisionNest Difference</h2>
+            <h2 className="heading-lg mb-6 text-emerald-900">Why Choose Us</h2>
             <p className="body-md text-emerald-700 font-light">
-              We bring a unique approach to helping businesses grow and transform. Here's what sets us apart:
+              Discover what makes us different and why our clients trust us for their financial needs.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-ivory rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
-              <div className="flex items-center justify-center mb-6">
-                <Star className="h-8 w-8 text-gold-500" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-gold-600 transition-colors duration-300">Strategic Expertise</h3>
-              <p className="font-light group-hover:text-emerald-900 transition-colors duration-300">
-                Our team brings deep expertise across multiple industries, allowing us to develop strategies that are both innovative and practical.
-              </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+            {/* Market Research */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">$</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Market Research</h3>
+              <p className="text-emerald-700 font-light">We do extensive market research to get lowest possible interest rates home loan for you</p>
             </div>
-            {/* Card 2 */}
-            <div className="bg-ivory rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
-              <div className="flex items-center justify-center mb-6">
-                <Users className="h-8 w-8 text-emerald-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-gold-600 transition-colors duration-300">Collaborative Partnership</h3>
-              <p className="font-light group-hover:text-emerald-900 transition-colors duration-300">
-                We work closely with you as true partners, ensuring alignment, transparency, and shared success.
-              </p>
+            {/* Best Result */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">👍</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Best Result</h3>
+              <p className="text-emerald-700 font-light">We can help customers in all types of situations and strive to achieve the best result for their individual situation.</p>
             </div>
-            {/* Card 3 */}
-            <div className="bg-ivory rounded-2xl p-8 shadow-md border border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-gold-400 group animate-on-scroll">
-              <div className="flex items-center justify-center mb-6">
-                <TrendingUp className="h-8 w-8 text-gold-500" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-gold-600 transition-colors duration-300">Results-Driven</h3>
-              <p className="font-light group-hover:text-emerald-900 transition-colors duration-300">
-                We focus on delivering measurable results that drive real business growth and create lasting value.
-              </p>
+            {/* Transparent */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">💵</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Transparent</h3>
+              <p className="text-emerald-700 font-light">We are transparent with no hidden fees or charges</p>
             </div>
-          </div>
-
-          <div className="text-center mt-16 animate-on-scroll">
-            <Link href="/contact" className="btn-primary bg-gold-500 hover:bg-gold-600 text-emerald-950">
-              Get In Touch
-            </Link>
+            {/* Problem Solving */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">⭐</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Problem Solving</h3>
+              <p className="text-emerald-700 font-light">We make lending easy, flexible, and fast</p>
+            </div>
+            {/* Beyond Settlement */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">❓</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Beyond Settlement</h3>
+              <p className="text-emerald-700 font-light">Even after your loan is settled, we are available to answer all your question.</p>
+            </div>
           </div>
         </div>
       </section>

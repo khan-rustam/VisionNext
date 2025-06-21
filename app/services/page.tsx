@@ -7,6 +7,34 @@ import { ArrowRight, BarChart2, Lightbulb, Target, Users, LineChart, PenTool, Tr
 import { useAnimation } from "@/components/animation-provider"
 import Navigation from "@/components/navigation"
 
+const contactEmail = "Hemant@visionnest.com.au"
+const services = [
+  {
+    title: "Home Loans",
+    image: "https://financesupport.com.au/wp-content/uploads/2022/11/villa-house-model-key-drawing-retro-desktop-real-estate-sale-concept.jpg",
+  },
+  {
+    title: "Commercial and Business Loan",
+    image: "https://financesupport.com.au/wp-content/uploads/2022/11/handshake-close-up-executives.jpg",
+  },
+  {
+    title: "Cash Flow",
+    image: "https://financesupport.com.au/wp-content/uploads/2022/11/accountant-calculating-profit-with-financial-analysis-graphs.jpg",
+  },
+  {
+    title: "Asset and Equipment Finance",
+    image: "https://financesupport.com.au/wp-content/uploads/2022/11/front-view-arrangement-economy-elements.jpg",
+  },
+  {
+    title: "Vehicle Loan and Personal Loan",
+    image: "https://financesupport.com.au/wp-content/uploads/2022/11/closeup.jpg",
+  },
+  {
+    title: "Self-Managed Super Fund (SMSF)",
+    image: "https://financesupport.com.au/wp-content/uploads/2022/11/loan-buy-house-pressure-buy-house1.jpg",
+  },
+]
+
 export default function Services() {
   const { initAnimations } = useAnimation()
 
@@ -20,7 +48,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="pt-24 pb-12 md:pt-32 md:pb-16  text-emerald-900 relative overflow-hidden">
         {/* Soft top gradient for logo/menu contrast */}
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-ivory/90 to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full h-52 bg-gradient-to-b from-ivory/90 to-transparent z-10 pointer-events-none" />
         {/* SVG/CSS Particles Effect */}
         <div className="absolute inset-0 pointer-events-none z-0 animate-fade-in">
           <svg width="100%" height="100%" className="w-full h-full" style={{ position: 'absolute', top: 0, left: 0 }}>
@@ -44,225 +72,20 @@ export default function Services() {
         </div>
       </section>
 
-
       {/* Services Grid */}
-      <section className="section-padding bg-ivory">
+      <section className=" bg-ivory">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <div className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <Lightbulb className="h-8 w-8 text-gold-500" />
-                </span>
+            {services.map((service, idx) => (
+              <div key={service.title} className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover flex flex-col items-center text-center animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
+                <img src={service.image} alt={service.title} className="mb-6 rounded-lg object-cover w-full h-48" />
+                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                <a href={`mailto:${contactEmail}?subject=Enquiry about ${encodeURIComponent(service.title)}`}
+                  className="text-emerald-600 hover:text-gold-600 font-medium mt-4 inline-block">
+                  Enquire Now
+                </a>
               </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Strategic Consulting</h3>
-              <p className="text-emerald-700 mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                We help businesses develop clear, actionable strategies that drive growth and create sustainable competitive advantages.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Business strategy development
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Market analysis and positioning
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Competitive advantage identification
-                </li>
-              </ul>
-              <Link
-                href="/contact"
-                className="inline-flex items-center text-emerald-600 font-medium hover:text-gold-600 transition-colors group"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
-
-            {/* Service 2 */}
-            <div className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <BarChart2 className="h-8 w-8 text-gold-500" />
-                </span>
-              </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Business Growth</h3>
-              <p className="text-emerald-700 mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                Our experts work with you to identify growth opportunities, optimize operations, and scale your business
-                effectively.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Growth strategy development
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Operational optimization
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Scalability planning
-                </li>
-              </ul>
-              <Link
-                href="/contact"
-                className="inline-flex items-center text-emerald-600 font-medium hover:text-gold-600 transition-colors group"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
-
-            {/* Service 3 */}
-            <div className="bg-ivory rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-300 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <Target className="h-8 w-8 text-gold-500" />
-                </span>
-              </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Innovation Solutions</h3>
-              <p className="text-emerald-700 mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                We help you develop and implement innovative solutions that address complex challenges and create new
-                opportunities.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Innovation strategy
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Product and service innovation
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Digital transformation
-                </li>
-              </ul>
-              <Link
-                href="/contact"
-                className="inline-flex items-center text-emerald-600 font-medium hover:text-gold-600 transition-colors group"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
-
-            {/* Service 4 */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <Users className="h-8 w-8 text-gold-500" />
-                </span>
-              </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Leadership Development</h3>
-              <p className="text-emerald-700 mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                We help organizations build strong leadership capabilities that drive performance, innovation, and
-                sustainable growth.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Executive coaching
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Team development
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Succession planning
-                </li>
-              </ul>
-              <Link
-                href="/contact"
-                className="inline-flex items-center text-emerald-600 font-medium hover:text-gold-600 transition-colors group"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
-
-            {/* Service 5 */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-200 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <LineChart className="h-8 w-8 text-gold-500" />
-                </span>
-              </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Performance Optimization</h3>
-              <p className="text-emerald-700 mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                We help businesses improve efficiency, productivity, and overall performance through data-driven
-                insights and proven methodologies.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Process optimization
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Performance metrics and KPIs
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Continuous improvement systems
-                </li>
-              </ul>
-              <Link
-                href="/contact"
-                className="inline-flex items-center text-emerald-600 font-medium hover:text-gold-600 transition-colors group"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
-
-            {/* Service 6 */}
-            <div className="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 card-hover animate-on-scroll animate-delay-300 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden">
-              <div className="flex items-center justify-center mb-8">
-                <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 group-hover:bg-gold-50 transition-colors duration-300 shadow-md p-4">
-                  <PenTool className="h-8 w-8 text-gold-500" />
-                </span>
-              </div>
-              <h3 className="heading-sm mb-4 group-hover:text-gold-600 transition-colors duration-300">Brand Strategy</h3>
-              <p className="text-emerald-700 mb-6 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                We help businesses develop and implement compelling brand strategies that resonate with target audiences
-                and drive growth.
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Brand positioning
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Messaging and communication
-                </li>
-                <li className="flex items-center text-emerald-800 font-light group-hover:text-emerald-900 transition-colors duration-300">
-                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500 mr-3"></div>
-                  Brand experience design
-                </li>
-              </ul>
-              <Link
-                href="/contact"
-                className="inline-flex items-center text-emerald-600 font-medium hover:text-gold-600 transition-colors group"
-              >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-gold-600" />
-              </Link>
-              <div className="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent group-hover:border-gold-400 transition-all duration-300" />
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -367,13 +190,7 @@ export default function Services() {
                 "VisionNest helped us transform our business strategy, resulting in significant growth and improved
                 operational efficiency. Their insights and guidance were invaluable."
               </p>
-              <div className="flex items-center">
-                <div className="h-12 w-12 rounded-full bg-emerald-100 mr-4"></div>
-                <div>
-                  <p className="font-semibold text-emerald-900">Sarah Johnson</p>
-                  <p className="text-emerald-700 text-sm">CEO, TechInnovate</p>
-                </div>
-              </div>
+
             </div>
 
             {/* Testimonial 2 */}
@@ -389,13 +206,7 @@ export default function Services() {
                 "The team at VisionNest brought fresh perspectives and innovative solutions to our challenges. Their
                 collaborative approach made the entire process smooth and effective."
               </p>
-              <div className="flex items-center">
-                <div className="h-12 w-12 rounded-full bg-emerald-100 mr-4"></div>
-                <div>
-                  <p className="font-semibold text-emerald-900">Michael Chen</p>
-                  <p className="text-emerald-700 text-sm">COO, GrowthPartners</p>
-                </div>
-              </div>
+
             </div>
 
             {/* Testimonial 3 */}
@@ -411,13 +222,7 @@ export default function Services() {
                 "Working with VisionNest has been transformative for our organization. Their strategic insights and
                 practical approach helped us navigate complex challenges and achieve our goals."
               </p>
-              <div className="flex items-center">
-                <div className="h-12 w-12 rounded-full bg-emerald-100 mr-4"></div>
-                <div>
-                  <p className="font-semibold text-emerald-900">Emily Rodriguez</p>
-                  <p className="text-emerald-700 text-sm">Founder, InnovateNow</p>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

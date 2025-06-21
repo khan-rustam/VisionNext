@@ -72,6 +72,15 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/legal"
+                  className="transition-colors hover:text-gold inline-block"
+                  style={{ color: "#FDFDFB" }}
+                >
+                  Legal & Policies
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -102,11 +111,11 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <Phone className="mr-3 h-5 w-5 flex-shrink-0" style={{ color: "#D4AF37" }} />
-                <span style={{ color: "#FDFDFB" }}>+61 (0) 000 000 000</span>
+                <span style={{ color: "#FDFDFB" }}>0494 160 339</span>
               </li>
               <li className="flex">
                 <MapPin className="mr-3 h-5 w-5 flex-shrink-0" style={{ color: "#D4AF37" }} />
-                <span style={{ color: "#FDFDFB" }}>Sydney, Australia</span>
+                <span style={{ color: "#FDFDFB" }}>1/2 Stafford Court, Doncaster East VIC 3109</span>
               </li>
             </ul>
           </div>
@@ -137,7 +146,16 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 text-center text-sm" style={{ borderTop: "1px solid #2E8B57", color: "#FDFDFB" }}>
-          <p>&copy; {currentYear} VisionNest. All rights reserved.</p>
+          <p className="mb-2">&copy; {currentYear} VisionNest. All rights reserved.</p>
+          <div className="flex justify-center space-x-4">
+            <Link href="/legal#privacy-policy" className="transition-colors hover:text-gold">
+              Privacy Policy
+            </Link>
+            <span style={{ color: "#2E8B57" }}>|</span>
+            <Link href="/legal#terms-and-conditions" className="transition-colors hover:text-gold">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

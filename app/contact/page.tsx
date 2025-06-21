@@ -218,7 +218,7 @@ export default function Contact() {
                     <Phone className="h-8 w-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-emerald-800 mb-3">Phone</h3>
-                      <p className="text-emerald-700">+61 (0) 000 000 000</p>
+                      <p className="text-emerald-700">0494 160 339</p>
                     </div>
                   </div>
 
@@ -226,7 +226,7 @@ export default function Contact() {
                     <MapPin className="h-8 w-8 text-emerald-600 mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-emerald-800 mb-3">Location</h3>
-                      <p className="text-emerald-700">Sydney, Australia</p>
+                      <p className="text-emerald-700">1/2 Stafford Court, Doncaster East VIC 3109</p>
                     </div>
                   </div>
                 </div>
