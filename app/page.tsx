@@ -58,19 +58,19 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section
-        className="relative h-screen flex items-center justify-center overflow-hidden"
+        className="relative h-screen flex items-center justify-center overflow-hidden animate-on-scroll"
         style={{ backgroundColor: "#00000000" }}
       >
         <div className="absolute inset-0 z-0">
           <div ref={heroRef} className="absolute inset-0">
             <Image
-              src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+              src="/Hero-Banner.jpg"
               alt="Abstract vision and innovation background - Unsplash"
               fill
               priority
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/70" />
           </div>
         </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Introduction Section */}
-      <section className="section-padding" style={{ backgroundColor: "#FDFDFB" }}>
+      <section className="section-padding animate-on-scroll" style={{ backgroundColor: "#FDFDFB" }}>
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 animate-on-scroll">
@@ -147,7 +147,7 @@ export default function Home() {
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl animate-on-scroll animate-delay-200 rotate-in">
               <Image
-                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Teamwork and business growth - Unsplash"
                 fill
                 className="object-cover"
@@ -158,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="section-padding" style={{ backgroundColor: "#F0F9F4" }}>
+      <section className="section-padding animate-on-scroll" style={{ backgroundColor: "#F0F9F4" }}>
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
             <div
@@ -224,7 +224,7 @@ export default function Home() {
       </section>
 
       {/* Our Lenders Section */}
-      <section className="section-padding bg-ivory">
+      <section className="section-padding bg-ivory animate-on-scroll">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-12 animate-on-scroll">
             <h2 className="heading-lg mb-4 tracking-wide">OUR LENDERS</h2>
@@ -263,7 +263,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24" style={{ backgroundColor: "#FDFDFB" }}>
+      <section className="py-24 animate-on-scroll" style={{ backgroundColor: "#FDFDFB" }}>
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-3  gap-8">
             <div className="text-center animate-on-scroll scale-in">
@@ -290,7 +290,7 @@ export default function Home() {
       </section>
 
       {/* Why We Are Better Than The Banks */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white animate-on-scroll">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-16 animate-on-scroll">
             <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 mb-4 font-semibold tracking-wide">
@@ -331,7 +331,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="section-padding" style={{ backgroundColor: "#FDFDFB" }}>
+      <section className="section-padding animate-on-scroll" style={{ backgroundColor: "#FDFDFB" }}>
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
             <div
@@ -372,7 +372,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-5 text-ivory relative overflow-hidden" style={{ backgroundColor: "#1A5A3A" }}>
+      <section className="py-5 text-ivory relative overflow-hidden animate-on-scroll" style={{ backgroundColor: "#1A5A3A" }}>
         <div className="absolute inset-0 opacity-10">
           <Image src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Business transformation background - Unsplash" fill className="object-cover" />
         </div>
