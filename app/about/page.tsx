@@ -78,10 +78,8 @@ export default function About() {
         </div>
       </section>
 
-   
-
       {/* Vision & Mission */}
-      <section className=" bg-ivory">
+      <section className="bg-ivory">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Image Side */}
@@ -99,7 +97,7 @@ export default function About() {
                 Our Vision & Mission
               </div>
               <h2 className="heading-md mb-4">
-                Nurturing <span className="text-gold-600">Ideas</span>, Inspiring <span className="text-gold-600">Growth</span>
+                Nurturing <span className="text-gold-600">Stability</span>, Empowering <span className="text-gold-600">Growth</span>
               </h2>
               <div className="space-y-6">
                 {/* Vision Card */}
@@ -108,7 +106,7 @@ export default function About() {
                   <div>
                     <h3 className="text-xl font-semibold text-emerald-700 mb-2">Our Vision</h3>
                     <p className="text-emerald-800 font-light">
-                      To be the catalyst that transforms visionary ideas into successful realities, creating lasting impact for businesses and communities.
+                      To be the trusted financial partner that empowers individuals and families to achieve their goals through smart, secure, and compassionate lending. Whether it's owning a home, funding a dream car, or managing life's transitions — we aim to make financing simple, personal, and impactful.
                     </p>
                   </div>
                 </div>
@@ -118,7 +116,7 @@ export default function About() {
                   <div>
                     <h3 className="text-xl font-semibold text-emerald-700 mb-2">Our Mission</h3>
                     <p className="text-emerald-800 font-light">
-                      To provide innovative, strategic solutions that empower businesses to grow, adapt, and thrive in an ever-changing landscape.
+                      To deliver innovative, transparent, and customer-focused lending solutions that support every stage of personal and financial growth. We are committed to helping our clients make confident financial decisions — from home loans to personal finance — with trust, care, and clarity.
                     </p>
                   </div>
                 </div>
@@ -128,46 +126,7 @@ export default function About() {
         </div>
       </section>
 
-         {/* Why We Are Better Than The Banks */}
-         <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-16 animate-on-scroll">
-            <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 mb-4 font-semibold tracking-wide">
-              Why We Are Better Than The Banks
-            </div>
-            <h2 className="heading-lg mb-6 text-emerald-900">Why We Are Better Than The Banks</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Completely Personalised */}
-            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
-              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2"/><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">👤</text></svg>
-              </span>
-              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Completely Personalised</h3>
-              <div className="font-bold text-gold-600 mb-2">IT'S ALL ABOUT YOU</div>
-              <p className="text-emerald-700 font-light">You are not just another number to us. We work to find you the deal that best suits you and your circumstances.</p>
-            </div>
-            {/* Ultra Quick */}
-            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
-              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2"/><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">⚡</text></svg>
-              </span>
-              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Ultra Quick</h3>
-              <div className="font-bold text-gold-600 mb-2">YOUR TIME IS OUR PRIORITY</div>
-              <p className="text-emerald-700 font-light">There's no "We will get back to you in 2-3 business days". We offer fast response times and quick results.</p>
-            </div>
-            {/* Super Simple */}
-            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
-              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
-                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2"/><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">✔️</text></svg>
-              </span>
-              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Super Simple</h3>
-              <div className="font-bold text-gold-600 mb-2">LEAVE IT UP TO US</div>
-              <p className="text-emerald-700 font-light">You will be assigned a dedicated Home Loan Specialist to assist you throughout the entire process.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Values */}
       <section className="section-padding bg-emerald-50">
@@ -288,31 +247,31 @@ export default function About() {
                 <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">$</text></svg>
               </span>
               <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Market Research</h3>
-              <p className="text-emerald-700 font-light">We do extensive market research to get lowest possible interest rates home loan for you</p>
+              <p className="text-emerald-700 font-light">We conduct extensive market research to secure the most competitive home loan interest rates tailored to your needs.</p>
             </div>
-            {/* Best Result */}
+            {/* Best Results */}
             <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
               <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
                 <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">👍</text></svg>
               </span>
-              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Best Result</h3>
-              <p className="text-emerald-700 font-light">We can help customers in all types of situations and strive to achieve the best result for their individual situation.</p>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Best Results</h3>
+              <p className="text-emerald-700 font-light">We work with clients in all types of financial situations to find solutions that deliver the best outcomes for their specific goals.</p>
             </div>
-            {/* Transparent */}
+            {/* Full Transparency */}
             <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
               <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
                 <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">💵</text></svg>
               </span>
-              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Transparent</h3>
-              <p className="text-emerald-700 font-light">We are transparent with no hidden fees or charges</p>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Full Transparency</h3>
+              <p className="text-emerald-700 font-light">Clear, honest advice with no hidden fees or charges. We believe in building trust through full financial clarity.</p>
             </div>
-            {/* Problem Solving */}
+            {/* Problem-Solving Approach */}
             <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
               <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
                 <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">⭐</text></svg>
               </span>
-              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Problem Solving</h3>
-              <p className="text-emerald-700 font-light">We make lending easy, flexible, and fast</p>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Problem-Solving Approach</h3>
+              <p className="text-emerald-700 font-light">We turn complex lending challenges into smooth solutions — fast, flexible, and with a personal touch.</p>
             </div>
             {/* Beyond Settlement */}
             <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
@@ -320,7 +279,7 @@ export default function About() {
                 <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">❓</text></svg>
               </span>
               <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Beyond Settlement</h3>
-              <p className="text-emerald-700 font-light">Even after your loan is settled, we are available to answer all your question.</p>
+              <p className="text-emerald-700 font-light">Our support doesn't end when your loan is approved — we're here to assist with future queries, refinancing, and more.</p>
             </div>
           </div>
         </div>

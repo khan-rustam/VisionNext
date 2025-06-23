@@ -32,10 +32,9 @@ export default function Home() {
   }, [initAnimations])
 
   useEffect(() => {
-    let yearsTarget = 10
-    let clientsTarget = 50
-    let satisfactionTarget = 98
-    let awardsTarget = 25
+    let yearsTarget = 17
+    let clientsTarget = 100
+    let satisfactionTarget = 100
     let duration = 1200 // ms
     let frame = 0
     let totalFrames = 60
@@ -44,14 +43,12 @@ export default function Home() {
       setYears(Math.round((yearsTarget * frame) / totalFrames))
       setClients(Math.round((clientsTarget * frame) / totalFrames))
       setSatisfaction(Math.round((satisfactionTarget * frame) / totalFrames))
-      setAwards(Math.round((awardsTarget * frame) / totalFrames))
       if (frame < totalFrames) {
         requestAnimationFrame(animate)
       } else {
         setYears(yearsTarget)
         setClients(clientsTarget)
         setSatisfaction(satisfactionTarget)
-        setAwards(awardsTarget)
       }
     }
     animate()
@@ -80,22 +77,13 @@ export default function Home() {
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="heading-xl mb-8 leading-tight fade-in-up" style={{ color: "#FDFDFB" }}>
-              Nurturing <span style={{ color: "#D4AF37" }}>Ideas</span> into{" "}
-              <span style={{ color: "#D4AF37" }}>Reality</span>
+              Where Your   <span style={{ color: "#D4AF37" }}>Home </span> Begins with {" "}
+              <span style={{ color: "#D4AF37" }}>Trust.</span>
             </h1>
-            <p
-              className="text-xl md:text-2xl max-w-2xl mx-auto mb-12 font-light slide-in-left"
-              style={{ color: "#FDFDFB", animationDelay: "0.3s" }}
-            >
-              We help visionary businesses grow and transform with innovative solutions
-            </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 scale-in" style={{ animationDelay: "0.6s" }}>
-              <Link href="/services" className="btn-primary group">
-                Explore Our Services
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-              <Link href="/contact" className="btn-secondary">
+              <Link href="/contact" className="btn-primary group">
                 Get In Touch
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </div>
           </div>
@@ -131,15 +119,22 @@ export default function Home() {
                 Welcome to VisionNest
               </div>
               <h2 className="heading-lg">
-                We Help Visionary Businesses <span style={{ color: "#D4AF37" }}>Grow</span> and{" "}
-                <span style={{ color: "#D4AF37" }}>Transform</span>
+                Secure <span style={{ color: "#D4AF37" }}> Homes.</span>  Empowered {" "}
+                <span style={{ color: "#D4AF37" }}>Futures.</span>
               </h2>
               <p className="body-lg font-light">
-                We will provide you with expert, timely advice and professional services that will exceed your expectations.
+                At VisionNest Home Loan, we believe that a home is more than just a roof — it's where
+                dreams settle, families grow, and futures are built. Founded with purpose and passion,
+                we are a family-led business committed to guiding others toward financial clarity,
+                emotional security, and long-term prosperity.               </p>
+              <p className="body-lg font-light">
+                With a deep understanding of trust, care, and strategic finance, we make the mortgage
+                process human — blending compassion with expertise. Our mission is to simplify home
+                ownership for every client we serve, offering not just loans, but peace of mind and a
+                trusted path home.
               </p>
-              <p className="body-md font-light">
-                We're here to help you through all the important financial life stages, whether you are looking to enter the housing market, developing your investment portfolio or you are small business owner. We will find a solution that saves you money, time, and hassle.
-
+              <p className="body-lg font-light">
+                Secure homes. Empowered lives. Built with vision, guided by trust.
               </p>
               <Link
                 href="/about"
@@ -192,17 +187,17 @@ export default function Home() {
                 description: "Flexible financing for your business growth and expansion.",
               },
               {
-                title: "Cash Flow",
+                title: "Investement Property",
                 image: "https://financesupport.com.au/wp-content/uploads/2022/11/accountant-calculating-profit-with-financial-analysis-graphs.jpg",
-                description: "Solutions to keep your business running smoothly and efficiently.",
+                description: "Expert guidance and solutions for your investment property financing needs.",
               },
             ].map((service, idx) => (
               <div
                 key={service.title}
                 className="bg-ivory rounded-2xl p-0 shadow-xl border border-gold-100 card-hover flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl hover:border-gold-400 group relative overflow-hidden floating"
-                style={{ minHeight: 420 }}
+                style={{ minHeight: 380 }}
               >
-                <div className="relative w-full h-48 overflow-hidden rounded-t-2xl">
+                <div className="relative w-full h-52 overflow-hidden rounded-t-2xl">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -210,17 +205,11 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gold-200/60 to-transparent opacity-80 pointer-events-none" />
                 </div>
-                <div className="flex-1 flex flex-col justify-between p-8">
-                  <h3 className="text-xl font-semibold mb-2 text-emerald-900 group-hover:text-gold-600 transition-colors duration-300">
+                <div className="flex flex-col gap-2 justify-between p-8">
+                  <h3 className="text-xl font-semibold text-emerald-900 group-hover:text-gold-600 transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-emerald-700 font-light mb-4 min-h-[48px]">{service.description}</p>
-                  <Link
-                    href="/services"
-                    className="mt-auto btn-primary bg-gold-500 hover:bg-gold-600 text-emerald-950 px-8 py-2 rounded-lg font-medium transition-colors duration-300 shadow-md flex justify-center items-center mx-auto w-fit"
-                  >
-                    Learn More
-                  </Link>
+                  <p className="text-emerald-700 font-light ">{service.description}</p>
                 </div>
               </div>
             ))}
@@ -234,13 +223,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Lenders Section */}
+      <section className="section-padding bg-ivory">
+        <div className="container-custom">
+          <div className="text-center max-w-4xl mx-auto mb-12 animate-on-scroll">
+            <h2 className="heading-lg mb-4 tracking-wide">OUR LENDERS</h2>
+            <h4 className="text-xl md:text-2xl font-semibold mb-6 text-gray-700">
+              We work with almost 50 lenders to offer the most competitive loan terms & approval rates.
+            </h4>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center">
+            {/* Lender Logos - use local images */}
+            {[
+              { src: "/Lenders/AMP.png", alt: "AMP" },
+              { src: "/Lenders/ANZ.png", alt: "ANZ" },
+              { src: "/Lenders/Westpac.png", alt: "Westpac" },
+              { src: "/Lenders/Bankwest.jpg", alt: "Bankwest" },
+              { src: "/Lenders/Commonwealth.png", alt: "Commonwealth Bank" },
+              { src: "/Lenders/ING.png", alt: "ING" },
+              { src: "/Lenders/Liberty.jpg", alt: "Liberty" },
+              { src: "/Lenders/LaTrobeFinancialLogo.jpg", alt: "La Trobe Financial" },
+              { src: "/Lenders/Macquarie_Group_logo.jpg", alt: "Macquarie" },
+              { src: "/Lenders/NAB-Logo.png", alt: "NAB" },
+              { src: "/Lenders/PapperMoney.png", alt: "Pepper Money" },
+              { src: "/Lenders/Resimac.jpeg", alt: "Resimac" },
+              { src: "/Lenders/Suncorp.jpeg", alt: "Suncorp" },
+              { src: "/Lenders/Bankof Marbourn.png", alt: "Bank of Melbourne" },
+              { src: "/Lenders/Teachers.png", alt: "Teachers Mutual Bank" },
+              { src: "/Lenders/st.george.jpeg", alt: "St. George" },
+              { src: "/Lenders/Heritage.png", alt: "Heritage Bank" },
+              { src: "/Lenders/bluestone.png", alt: "Bluestone" },
+            ].map((logo, idx) => (
+              <div key={logo.alt + idx} className="flex items-center justify-center bg-white rounded-lg shadow p-4 h-28">
+                <img src={logo.src} alt={logo.alt} className="max-h-16 object-contain" style={{ maxWidth: '120px', width: '100%' }} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-24" style={{ backgroundColor: "#FDFDFB" }}>
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3  gap-8">
             <div className="text-center animate-on-scroll scale-in">
               <div className="text-5xl font-bold mb-2 pulse-slow transition-all duration-500" style={{ color: "#2E8B57", letterSpacing: "-2px" }}>
-                {years}+
+                17+
               </div>
               <p className="text-lg font-medium text-emerald-700 tracking-wide">Years Experience</p>
             </div>
@@ -256,76 +284,47 @@ export default function Home() {
               </div>
               <p className="text-lg font-medium text-emerald-700 tracking-wide">Client Satisfaction</p>
             </div>
-            <div className="text-center animate-on-scroll animate-delay-300 scale-in">
-              <div className="text-5xl font-bold mb-2 pulse-slow transition-all duration-500" style={{ color: "#2E8B57", letterSpacing: "-2px" }}>
-                {awards}+
-              </div>
-              <p className="text-lg font-medium text-emerald-700 tracking-wide">Industry Awards</p>
-            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="section-padding" style={{ backgroundColor: "#F0F9F4" }}>
+      {/* Why We Are Better Than The Banks */}
+      <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
-            <div
-              className="inline-block rounded-lg px-3 py-1 text-sm mb-4"
-              style={{ backgroundColor: "#E6F7ED", color: "#2E8B57" }}
-            >
-              Why Choose Us
+          <div className="text-center max-w-2xl mx-auto mb-16 animate-on-scroll">
+            <div className="inline-block rounded-lg bg-gold-100 px-3 py-1 text-sm text-gold-600 mb-4 font-semibold tracking-wide">
+              Why We Are Better Than The Banks
             </div>
-            <h2 className="heading-lg mb-6">The VisionNest Advantage</h2>
-            <p className="body-md font-light">
-              We bring a unique approach to helping businesses grow and transform. Here's what sets us apart.
-            </p>
+            <h2 className="heading-lg mb-6 text-emerald-900">Why We Are Better Than The Banks</h2>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center animate-on-scroll animate-delay-100 fade-in-up">
-              <div
-                className="h-20 w-20 rounded-full mx-auto mb-6 flex items-center justify-center floating"
-                style={{ backgroundColor: "#D4AF37" }}
-              >
-                <Users className="h-10 w-10" style={{ color: "#FDFDFB" }} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4" style={{ color: "#2E8B57" }}>
-                Expert Team
-              </h3>
-              <p className="font-light" style={{ color: "#2E8B57" }}>
-                Our experienced professionals bring deep industry knowledge and proven methodologies to every project.
-              </p>
+            {/* Completely Personalised */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">👤</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Completely Personalised</h3>
+              <div className="font-bold text-gold-600 mb-2">IT'S ALL ABOUT YOU</div>
+              <p className="text-emerald-700 font-light">You are not just another number to us. We work to find you the deal that best suits you and your circumstances.</p>
             </div>
-
-            <div className="text-center animate-on-scroll animate-delay-200 fade-in-up">
-              <div
-                className="h-20 w-20 rounded-full mx-auto mb-6 flex items-center justify-center floating"
-                style={{ backgroundColor: "#D4AF37", animationDelay: "1s" }}
-              >
-                <TrendingUp className="h-10 w-10" style={{ color: "#FDFDFB" }} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4" style={{ color: "#2E8B57" }}>
-                Proven Results
-              </h3>
-              <p className="font-light" style={{ color: "#2E8B57" }}>
-                We deliver measurable outcomes that drive real business growth and create lasting value for our clients.
-              </p>
+            {/* Ultra Quick */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">⚡</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Ultra Quick</h3>
+              <div className="font-bold text-gold-600 mb-2">YOUR TIME IS OUR PRIORITY</div>
+              <p className="text-emerald-700 font-light">There's no "We will get back to you in 2-3 business days". We offer fast response times and quick results.</p>
             </div>
-
-            <div className="text-center animate-on-scroll animate-delay-300 fade-in-up">
-              <div
-                className="h-20 w-20 rounded-full mx-auto mb-6 flex items-center justify-center floating"
-                style={{ backgroundColor: "#D4AF37", animationDelay: "2s" }}
-              >
-                <Star className="h-10 w-10" style={{ color: "#FDFDFB" }} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4" style={{ color: "#2E8B57" }}>
-                Tailored Solutions
-              </h3>
-              <p className="font-light" style={{ color: "#2E8B57" }}>
-                Every strategy and implementation is customized to your unique needs, goals, and industry requirements.
-              </p>
+            {/* Super Simple */}
+            <div className="bg-ivory rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+              <span className="inline-flex items-center justify-center rounded-full bg-gold-50 mb-6 shadow-md p-4">
+                <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D4AF37" strokeWidth="2" /><text x="50%" y="55%" textAnchor="middle" fill="#2E8B57" fontSize="18" fontWeight="bold" dy=".3em">✔️</text></svg>
+              </span>
+              <h3 className="text-lg font-semibold text-emerald-800 mb-2 group-hover:text-gold-600 transition-colors duration-300">Super Simple</h3>
+              <div className="font-bold text-gold-600 mb-2">LEAVE IT UP TO US</div>
+              <p className="text-emerald-700 font-light">You will be assigned a dedicated Home Loan Specialist to assist you throughout the entire process.</p>
             </div>
           </div>
         </div>
@@ -373,32 +372,26 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding text-ivory relative overflow-hidden" style={{ backgroundColor: "#1A5A3A" }}>
+      <section className="py-5 text-ivory relative overflow-hidden" style={{ backgroundColor: "#1A5A3A" }}>
         <div className="absolute inset-0 opacity-10">
           <Image src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Business transformation background - Unsplash" fill className="object-cover" />
         </div>
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-on-scroll slide-in-left">
-              <h2 className="heading-lg" style={{ color: "#FDFDFB" }}>
-                Ready to Transform Your Vision into Reality?
+              <h2 className="heading-lg font-montserrat" style={{ color: "#FDFDFB" }}>
+                Secure Homes. Empowered Futures With Vision Nest Home Loan.
               </h2>
-              <p className="body-md font-light" style={{ color: "#FDFDFB" }}>
-                Let's discuss how VisionNest can help your business grow and innovate. Our team is ready to support your
-                journey toward success and transformation.
-              </p>
+
               <div className="flex flex-col sm:flex-row gap-6">
                 <Link href="/contact" className="btn-primary" style={{ backgroundColor: "#D4AF37", color: "#2E8B57" }}>
                   Contact Us Today
-                </Link>
-                <Link href="/about" className="btn-secondary" style={{ borderColor: "#D4AF37", color: "#D4AF37" }}>
-                  Learn More About Us
                 </Link>
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl animate-on-scroll animate-delay-200 slide-in-right">
               <Image
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1546&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Business partnership and transformation - Unsplash"
                 fill
                 className="object-cover"

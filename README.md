@@ -1,26 +1,31 @@
-# VisionNest
+# VisionNest Home Loans
 
 ![VisionNest Preview](docs/visionnest-preview.gif)
 
 ---
 
 ## 🚀 Project Overview
-**VisionNest** is a premium business website focused on visionary growth and innovative solutions. The platform is designed to help businesses grow, innovate, and transform with a modern, elegant, and user-friendly interface.
+
+**VisionNest** is an organization dedicated to helping individuals, families, and businesses achieve their dreams with tailored lending solutions. Our platform specializes in home loans, commercial loans, vehicle loans, and more—delivered with trust, transparency, and compassion.
 
 ---
 
-## 🌟 Features
-- Elegant, modern UI with premium animations and effects
-- Responsive design for all devices
+## 🌟 Key Features
+
+- Modern, elegant, and responsive UI
+- Home loans, commercial loans, vehicle loans, and more
+- "Our Lenders" section with real lender logos
 - Animated stats and interactive cards
-- SEO-optimized with rich meta tags
-- Contact form with enhanced UI and validation
-- FAQ, testimonials, and CTA sections
+- SEO-optimized with rich meta tags for lending/finance
+- Testimonials, FAQ, and strong CTAs
 - Fully accessible and cross-browser compatible
+- Contact form with validation
+- Mobile-first design
 
 ---
 
 ## 🎨 Color Palette
+
 | Name      | Hex       | Usage                        |
 |-----------|-----------|------------------------------|
 | Emerald   | #2E8B57   | Primary, text, accents       |
@@ -31,31 +36,31 @@
 ---
 
 ## 🔤 Fonts
+
+- **Logo/Main:** Poppins Semi-Bold
 - **Headings:** Playfair Display (Bold)
 - **Body:** Montserrat (Medium/Regular)
+- **Subtext:** Playfair Display or Georgia (small caps)
 
 ---
 
 ## 🗂️ Folder Structure
+
 ```
 visionnest/
 ├── app/
 │   ├── about/
 │   ├── contact/
 │   ├── services/
-│   └── ...
+│   ├── legal/
+│   └── page.tsx (Home)
 ├── components/
+│   └── navigation.tsx
 │   └── ui/
-├── hooks/
-├── lib/
 ├── public/
+│   ├── Lenders/ (all lender/bank logos)
 │   ├── favicon.ico
-│   ├── apple-touch-icon.png
-│   ├── favicon-32x32.png
-│   ├── favicon-16x16.png
-│   ├── android-chrome-512x512.png
-│   ├── android-chrome-192x192.png
-│   └── site.webmanifest
+│   └── ...
 ├── styles/
 │   └── globals.css
 ├── tailwind.config.ts
@@ -67,26 +72,36 @@ visionnest/
 ---
 
 ## 🛠️ Technology Stack
+
 - **Framework:** Next.js (App Router)
 - **Styling:** Tailwind CSS, custom CSS
 - **Icons:** Lucide React
-- **Fonts:** Google Fonts (Playfair Display, Montserrat)
+- **Fonts:** Google Fonts (Poppins, Playfair Display, Montserrat)
 - **Image Optimization:** next/image
 - **Animation:** Custom hooks, CSS keyframes
 
 ---
 
+## 🏦 Lenders
+
+VisionNest partners with nearly 50 lenders, including:
+
+- AMP, ANZ, Westpac, Bankwest, Commonwealth Bank, ING, Liberty, La Trobe Financial, Macquarie, NAB, Pepper Money, Resimac, Suncorp, Bank of Melbourne, Teachers Mutual Bank, St. George, Heritage Bank, Bluestone, and more.
+
+All lender logos are stored in `/public/Lenders`.
+
+---
+
 ## 📞 Contact
+
 - **Email:** Hemant@visionnest.com.au, Shagun@visionnest.com.au
 - **Location:** Sydney, Australia
 - **Website:** [visionnest.com.au](https://visionnest.com.au)
 
 ---
 
-> _Nurturing Ideas into Reality. We help visionary businesses grow and transform with innovative solutions._
+> _Empowering your future with trusted lending solutions—home loans, commercial loans, vehicle loans, and more._
 
 ---
 
-![VisionNest UI Demo](docs/visionnest-ui-demo.gif)
-
-> _Replace the GIFs above with actual UI previews for a more attractive README!_ 
+![VisionNest UI Demo](docs/visionnest-ui-demo.gif) 

@@ -18,16 +18,16 @@ const services = [
     image: "https://financesupport.com.au/wp-content/uploads/2022/11/handshake-close-up-executives.jpg",
   },
   {
-    title: "Cash Flow",
+    title: "Investement Property",
     image: "https://financesupport.com.au/wp-content/uploads/2022/11/accountant-calculating-profit-with-financial-analysis-graphs.jpg",
   },
   {
     title: "Asset and Equipment Finance",
-    image: "https://financesupport.com.au/wp-content/uploads/2022/11/front-view-arrangement-economy-elements.jpg",
+    image: "https://images.unsplash.com/photo-1653378972643-5ac307460d36?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Vehicle Loan and Personal Loan",
-    image: "https://financesupport.com.au/wp-content/uploads/2022/11/closeup.jpg",
+    image: "https://www.bankofbaroda.in/-/media/project/bob/countrywebsites/india/blogs/images/what-is-vehicle-loan-and-its-different-types.jpg",
   },
   {
     title: "Self-Managed Super Fund (SMSF)",
@@ -158,100 +158,6 @@ export default function Services() {
                   We measure results, gather feedback, and refine our approach to ensure optimal outcomes.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
-            <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700 mb-4">
-              Client Success
-            </div>
-            <h2 className="heading-lg mb-6">What Our Clients Say</h2>
-            <p className="body-md text-emerald-700 font-light">
-              Don't just take our word for it. Here's what our clients have to say about working with VisionNest.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-lg p-8 shadow-xl animate-on-scroll animate-delay-100 border border-gray-100">
-              <div className="flex items-center mb-6">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="h-5 w-5 text-gold-500 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-emerald-800 mb-8 italic font-light">
-                "VisionNest helped us transform our business strategy, resulting in significant growth and improved
-                operational efficiency. Their insights and guidance were invaluable."
-              </p>
-
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-lg p-8 shadow-xl animate-on-scroll animate-delay-200 border border-gray-100">
-              <div className="flex items-center mb-6">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="h-5 w-5 text-gold-500 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-emerald-800 mb-8 italic font-light">
-                "The team at VisionNest brought fresh perspectives and innovative solutions to our challenges. Their
-                collaborative approach made the entire process smooth and effective."
-              </p>
-
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-lg p-8 shadow-xl animate-on-scroll animate-delay-300 border border-gray-100">
-              <div className="flex items-center mb-6">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="h-5 w-5 text-gold-500 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-emerald-800 mb-8 italic font-light">
-                "Working with VisionNest has been transformative for our organization. Their strategic insights and
-                practical approach helped us navigate complex challenges and achieve our goals."
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-emerald-900 text-ivory relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80')] opacity-10"></div>
-        <div className="container-custom relative z-10">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8 animate-on-scroll">
-              <h2 className="heading-lg">Ready to Transform Your Business?</h2>
-              <p className="body-md text-emerald-100 font-light">
-                Let's discuss how VisionNest can help your business grow and innovate. Contact us today to schedule a
-                consultation and take the first step toward transformation.
-              </p>
-              <Link href="/contact" className="btn-primary bg-gold-500 hover:bg-gold-600 text-emerald-950 group">
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-            </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl animate-on-scroll animate-delay-200">
-              <div className="absolute inset-0 bg-gradient-to-br from-gold-600/20 to-transparent z-10"></div>
-              <Image
-                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80"
-                alt="Business partnership and success - Unsplash"
-                fill
-                className="object-cover"
-              />
             </div>
           </div>
         </div>
